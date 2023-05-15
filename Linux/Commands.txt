@@ -1,0 +1,67 @@
+1. cat Command:
+    One of the most universal tool, yet all it does is copy standard input to standard output.
+
+    a. Create a file:
+        cat > file_name: > redirect output to the file
+
+    b. Concatenate file: Copy the content of one or more file into another.
+        cat file_name1 file_name2 > all
+        or
+        cat anycontent > file_name
+
+    c. See the content of the file:
+        cat file_name
+
+    d. For help:
+        cat --help
+
+2. ls Command:
+    List the file present in the folder.
+
+    a. ls
+
+    b. ls -a: List all the files including hidden e.g. .gitignore.
+
+3. touch Command: 
+
+    a. Create Empty file:
+        touch file_name
+
+    b. Create multiple empty file:
+        touch file_name1 file_name2 filename3
+
+    c. Change Timestamp of all the files:
+        i. Access Time (Last time when a file was access)
+            touch -a
+        
+        ii. Modify Time (Last time when a file was modified)
+            touch -m
+
+        iii. Change Time (Last time when file metadata was changed)
+    
+    d. Can see the stat of timestamp of the file:
+        stat file_name
+
+4. vi and nano Command:
+    Both are text editor.
+
+    a. vi:
+        i. to create or edit the text in the file:
+            vi file_name
+
+        ii. to edit the text:
+            press i for change or add text to the file.
+            press esc to quit editing the file.
+
+        iii. to save & quit the file:
+            a) to save: :w
+            b) to save and quit: :wq or :x
+            c) to quit: :q
+            d) forcefully quit without save: :q!
+
+    b. nano:
+        i. to create or edit the text in the file:
+            nano file_name
+
+        ii. to save & quit the file:
+            ctrl + x --> y --> enter
